@@ -22,7 +22,7 @@ def list_input_devices(p:pyaudio.PyAudio):
 class Recorder:
     def __init__(self, pyaudio:pyaudio.PyAudio, device_index,
                  rate = 48000, format = pyaudio.paInt16, 
-                 channels=1, chunk =2048) -> None:
+                 channels=1, chunk =512) -> None:
         self.p = pyaudio
         self.index = device_index
         self.rate = rate
@@ -32,6 +32,7 @@ class Recorder:
     
     
     def record(self,duration, file, recording_started:super(threading.Event,None)=None):
+        file = str(file)
         stream = self.p.open(format=self.format, channels=self.channels,
                 rate=self.rate, input=True,input_device_index = self.index,
                 frames_per_buffer=self.chunk)
