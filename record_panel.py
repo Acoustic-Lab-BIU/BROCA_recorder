@@ -161,7 +161,7 @@ class RecorderWindow:
             UttNo = self.current_sentence+1
             
         r.record(int(self.countdownBox.get()), self.saved_path /
-                 f'sentence_{UttNo}_{now}".wav', None)
+                 f'sentence_{UttNo}_{now}.wav', None)
 
         self.rec_button.config(
             text="Record", bg="red", activebackground='red', command=self.make_recording)
