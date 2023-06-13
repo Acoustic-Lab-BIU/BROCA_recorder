@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+79,What happens now that I've seen the nurse?,Que se passe-t-il maintenant que j'ai vu l'infirmière?,ask_whats_next,professional,nurse
+78,Who does my wife see next?,Qui ma femme verra-t-elle ensuite?,ask_whats_next,,
+80,Can you tell me how many more appointments I have?,Pouvez-vous me dire combien de rendez-vous il me reste?,ask_whats_next,,
+54,Does my husband get meals too?,Mon mari aura-t-il un repas aussi ? ,ask_meal_companions,,
+93,I'd like to see a doctor.,Je voudrais voir un docteur.,location-request,professional,doctor
+26,What documents should I show?,Quels papiers dois-je montrer?,ask_documents,,
+42,Can I leave now?,Puis-je partir maintenant ?,ask_about_leaving,,
+67,Do you have halal food options?,Avez-vous des plats halal?,ask_dietary,,
+76,Does the hospital stay open all the time?,L'hôpital est-il ouvert en permanence?,ask_opening_hours,place,hospital
+8,hello I'm Nancie,"Bonjour, je m'appelle Nancie.",greet+introduce_self,PERSON/NAME,Nancie

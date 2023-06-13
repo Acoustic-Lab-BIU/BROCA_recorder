@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+9,Yes you're right.,"Oui, tu as raison.",confirm,,
+91,I'm lost. I'm looking for the reception.,Je suis perdue. Je cherche l'accueil.,location-request,room,reception
+11,No this is my fifth time,"Non, c'est la cinquième fois que je viens.",deny,,
+32,"I'm wondering who dad will see first, do you know?","Je me demande qui papa va voir en premier, tu le sais ?",ask_appt_structure,whichappt,first
+94,Where should I go for the entrance?,Comment se rendre à l'entrée ?,directions-request,room,entrance
+53,Is food provided for my friend?,Mon amie aura-t-elle de la nourriture ?,ask_meal_companions,,
+77,What's a neuropsychologist?,Qu'est-ce qu'un neuropsychologue?,ask_profession_neuro,,
+29,Does the memory consultation last all day?,La consultation de mémoire dure toute la journée?,ask_appt_structure,,
+100,We want to leave how do we get to the exit?,"On veut sortir, pouvez-vous nous indiquer la sortie",directions-request,room,exit
+4,What name do I give you?,Comment dois-je vous appeler ?,ask_robot_name,,

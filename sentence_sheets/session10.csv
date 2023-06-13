@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+16,Where do I go for information?,Où dois-je aller pour obtenir des informations?,ask_help_gen,,
+95,Yes and to get to the doctors' office?,Oui et pour aller au bureau des médecins?,directions-request,room,consulting room
+13,I'm not quite sure what I'm supposed to do here. Can you assist me?,Je ne sais pas exactement ce que je dois faire ici.  Pouvez-vous m'aider?,ask_help_gen,,
+40,Can they tell me what's wrong with me after today?,Pourront-ils me dire ce qui ne va pas chez moi en fin de journée ?,ask_about_diagnosis,,
+69,I'm tired is there a wheelchair?,"Je suis fatigué, est-ce qu'il y a un fauteuil roulant ? ",ask_mobility_aid,,
+81,Who else do I have to see today?,Qui d'autre dois-je voir aujourd'hui?,ask_whats_next,,
+15,Can you direct me to someone who can help me?,Pouvez-vous me diriger vers quelqu'un qui peut m'aider?,ask_help_gen,,
+43,I don't want to stay any longer.,Je ne veux pas rester plus longtemps.,ask_about_leaving,,
+46,What is the plan for meals?,Comment s'organisent les repas ? ,ask_meal_arrangements,,
+24,We're here for my wife's checkup.,Nous sommes ici pour le rendez-vous de ma femme.,inform_arrival,,

@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+66,Are kosher meals available?,Proposez-vous de la nourriture casher?,ask_dietary,,
+25,Can you remind me what documents I need to bring?,Vous pouvez me rappeler les documents à prévoir?,ask_documents,,
+96,And can you tell me how to get the ground floor?,Et pouvez-vous me dire comment me rendre au rez-de-chaussée?,directions-request,room,ground floor
+23,"We have a consultation today, for my Mum.",Ma mère a une consultation aujourd'hui.,inform_arrival,,
+84,We've been waiting for ages.  Any idea when I'll be seen?,Nous attendons depuis une éternité. Auriez-vous une idée de quand je passerai ?,ask_wait_time,,
+64,Do you know when lunch is available?,Savez-vous quand le déjeuner est disponible?,ask_meal_times,meal,lunch
+44,I'm ready to leave please.,Je suis prête à partir s'il vous plaît.,ask_about_leaving,,
+5,My name is Oliver,Je m'appelle Oliver.,introduce_self,PERSON/NAME,Oliver
+38,Will this visit help me understand what's going on with my memory?,Cette visite m'aidera-t-elle à comprendre ce qui se passe avec ma mémoire?,ask_about_diagnosis,,
+12,No no it's not,"Non, ce n'est pas ça.",deny,,
