@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+41,I want to go home.,Je veux rentrer chez moi.,ask_about_leaving,reason,home
+89,I'd like a coffee.,J'ai envie d'un café.,location-request,room,coffee machine
+10,That's correct yeah,"Oui, c'est tout à fait ça.",confirm,,
+59,What do we have to pay for the meals?,Combien doit-on payer pour les repas?,ask_meal_cost,,
+2,Hello,Bonjour,greet,,
+50,Do you know what they serve for lunch?,Savez-vous ce qu'ils servent pour le déjeuner ?,ask_meal_choices,meal,lunch
+31,I'm a little unsure about what's going to happen this visit. Could you explain?,Je ne suis pas sûr de ce qui va se passer lors de cette visite. Pourriez-vous expliquer?,ask_appt_structure,,
+57,Could you let me know the breakfast cost,Pourriez-vous m'indiquer le prix du petit-déjeuner?,ask_meal_cost,meal,breakfast
+19,I have an appointment at ten fifteen.,J'ai rendez-vous à dix heures quinze.,inform_arrival,time,2023-05-23T10:15:00.000-07:00
+73,What time is the cafeteria open until?,La cafétéria elle est ouverte jusqu'à quelle heure?,ask_opening_hours,place,cafe

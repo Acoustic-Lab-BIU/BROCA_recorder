@@ -11,31 +11,44 @@ import signal
 import random
 import datetime
 from pathlib import Path
+import logging
 
 
 class RecorderWindow:
-    def __init__(self, win, saved_path: Path, speaker_id):
+    def __init__(self, win, saved_path: Path, speaker_id, sentence_sheet_path:Path= None):
         self.saved_path = Path(saved_path)
         self.speaker_id = speaker_id
         self.window = win
-        self.current_folder = Path(os.getcwd())
-        self.current_folder = self.current_folder/"example.xlsx"
-        self.sentences = pd.read_excel(self.current_folder)
+        if sentence_sheet_path == None:
+            self.current_folder = Path(os.getcwd())
+            self.sentence_sheet_path = self.current_folder/"example.xlsx"
+        else:
+            self.sentence_sheet_path = sentence_sheet_path
+        try:
+            self.sentences = pd.read_excel(self.sentence_sheet_path)
+        except:
+            self.sentences = pd.read_csv(self.sentence_sheet_path)
 
-        self.num_list = list(range(1, 101))  # list from 1 to 100
-        self.shuffled_list = random.sample(self.num_list, len(self.num_list))
+        # self.num_list = list(range(1, 101))  # list from 1 to 100
+        # self.shuffled_list = random.sample(self.num_list, len(self.num_list))
 
-        self.stored_dict = {
-            i+1: self.shuffled_list.index(self.num_list[i])+1 for i in range(len(self.num_list))}
-
+        # self.stored_dict = {
+        #     i+1: self.shuffled_list.index(self.num_list[i])+1 for i in range(len(self.num_list))}
         self.current_sentence = 0
 
-        # Split the shuffled list into groups of 20
-        groups = [self.shuffled_list[i:i+20]
-                  for i in range(0, len(self.shuffled_list), 20)]
+
+        # # Split the shuffled list into groups of 20
+        # groups = [self.shuffled_list[i:i+20]
+        #           for i in range(0, len(self.shuffled_list), 20)]
 
         # Access the sentences from the specified column index
-        self.sentences = self.sentences.iloc[:, 0].tolist()
+        try:
+            self.utterance_numbers = self.sentences['UttNo']
+            self.sentences = self.sentences['Final (FR)']
+        except KeyError:
+            self.sentences = self.sentences.iloc[:, 0].tolist()
+
+            
 
         self.text = tk.Text(self.window, height=2,
                             width=75, font=("Arial", 18))
@@ -131,14 +144,24 @@ class RecorderWindow:
         print(device_dict)
         print("-------------------------------------------------------------")
         # device_index = int(input('device index:'))
-
-        # choose default device
-        device_index = device_dict['IN 01-02 (BEHRINGER UMC 1820)']
-
+        try:
+        # choose expected sound card
+            device_index = device_dict['IN 01-02 (BEHRINGER UMC 1820)']
+        except KeyError:
+            device_index = device_dict['default']
+        except KeyError:
+            device_index = 0
+            
+        logging.debug(f'device index: {device_index}')
         r = recorder.Recorder(p, device_index)
         now = str(datetime.datetime.now()).replace(' ', '_').replace(':', '-')
+        try:
+            UttNo = self.utterance_numbers[self.current_sentence]
+        except KeyError:
+            UttNo = self.current_sentence+1
+            
         r.record(int(self.countdownBox.get()), self.saved_path /
-                 ('sentence_'+str(self.current_sentence+1)+"_"+now+".wav"), None)
+                 f'sentence_{UttNo}_{now}".wav', None)
 
         self.rec_button.config(
             text="Record", bg="red", activebackground='red', command=self.make_recording)

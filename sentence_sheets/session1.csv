@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+17,We have an appointment with the doctor but we don't remember what time.,On a rendez-vous avec le médecin mais on sait plus l'heure.,inform_arrival,professional,doctor
+63,When can I expect lunch?,A quelle heure puis-je déjeuner ?,ask_meal_times,meal,lunch
+61,What time do we eat breakfast?,À quelle heure prend-on le petit-déjeuner?,ask_meal_times,meal,breakfast
+87,"But I can't stay in front of you like this, where's the waiting room?","Mais là je peux pas rester sur la devant vous comme ça, où est la pièce pour attendre?",location-request,room,waiting room
+72,Can you lend me a walking frame for the visit?,Pouvez-vous me prêter un déambulateur pour la visite?,ask_mobility_aid,,
+28,"Oh, okay. But I'm not sure which documents I should have. Can you help me?","Oh, d'accord. Mais je ne suis pas sûr de quels documents je dois avoir. Pouvez-vous m'aider?",ask_documents,,
+56,Is the food on offer for both of us?,La nourriture proposée est-elle pour nous deux?,ask_meal_companions,,
+30,Could you give us an idea of what to expect today?,Pourriez-vous nous donner une idée de ce qui nous attend aujourd'hui?,ask_appt_structure,,
+86,Where's the cafe?,Où se trouve la cafétéria?,location-request,room,cafe
+71,Are there walking sticks we could borrow?,Y-a-t-il des cannes que nous pouvons emprunter ?,ask_mobility_aid,,

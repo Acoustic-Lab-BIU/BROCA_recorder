@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import filedialog
 import os
 from tkinter import filedialog
 from record_panel import RecorderWindow
@@ -32,10 +33,20 @@ class AudioRecorderApp:
         female_button = tk.Radiobutton(self.window, text="Female", font=("Arial", 15),variable=self.selected_gender,command=self.selected_gen, value=2)#, command=self.show_selected_gender)
         female_button.pack()
         self.gender = -1
+        
+        self.sentence_sheet_path = None
+        self.browse_frame = tk.Frame(self.window)
+        self.browse_frame.pack()
+        self.browse_label = tk.Label(self.browse_frame)
+        self.browse_label.pack(side=tk.TOP)
+        self.button_browse = tk.Button(self.browse_label, text='Browse',command = self.browse_file)
+        self.button_browse.pack(side=tk.TOP)
+        
         self.submit_frame = tk.Frame(self.window)  # Create a frame to hold the label and button
         self.submit_frame.pack()
         self.submit_label = tk.Label(self.submit_frame)
         self.submit_label.pack(side=tk.TOP)
+        
         
         self.button_submit = tk.Button(self.submit_frame, text="Submit", command=self.button_click)
         self.button_submit.pack(side=tk.TOP)
@@ -101,7 +112,7 @@ class AudioRecorderApp:
         return_button = tk.Button(new_window, text="Return", command=self.return_to_main)
         return_button.pack(side=tk.BOTTOM)
         return_button.pack(pady=10)
-        RecorderWindow(new_window,saved_path,speaker_id)
+        RecorderWindow(new_window,saved_path,speaker_id,self.sentence_sheet_path)
         
     
     def return_to_main(self):
@@ -126,6 +137,8 @@ class AudioRecorderApp:
         with open(path/("speaker_"+id_number+".txt"), "w") as file:
             file.write(id_number+"\n")
             file.write(g+"\n")
+            if self.sentence_sheet_path is not None:
+                file.write(self.sentence_sheet_path.name)
         
 
     def create_folder_for_speaker_id(self,id_number):
@@ -143,6 +156,14 @@ class AudioRecorderApp:
         # else:
         #     self.submit_label.config(text="Recording Speaker ID")
         return saving_path
+    
+    def browse_file(self):
+        # Open a file dialog to select a file
+        file_path = filedialog.askopenfilename()
+        
+        # Print the selected file path
+        # logging.debug("Selected File:", file_path)
+        self.sentence_sheet_path = Path(file_path)
         
 # Create an instance of the AudioRecorderApp class and run the application
 app = AudioRecorderApp()

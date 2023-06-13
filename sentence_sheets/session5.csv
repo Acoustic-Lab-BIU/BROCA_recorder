@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+34,Can my husband come in with me for the appointment?,Mon mari peut-il m'accompagner lors du rendez-vous?,ask_accompaniment,,
+82,Do you know if there's a lot of waiting time?,Est-ce que vous savez s'il y a beaucoup d'attente?,ask_wait_time,,
+27,I'm not sure what documents you mean. Could you tell me please?,Je ne suis pas sûr de savoir de quels documents vous parlez. Pourriez-vous me les préciser?,ask_documents,,
+48,"If we need to eat, what should we do?","Si nous devons manger, que devons-nous faire?",ask_meal_arrangements,,
+62,When does lunch usually happen?,Quand le déjeuner a-t-il lieu en général?,ask_meal_times,meal,lunch
+36,Could I go in with my father to translate?,Puis-je aller à la consultation avec mon père pour traduire?,ask_accompaniment,reason,translate
+70,Could I use a wheelchair? I'm worn out.,Pourrais-je utiliser un fauteuil roulant? Je suis épuisé.,ask_mobility_aid,,
+51,What can I expect for breakfast?,À quoi puis-je m'attendre pour le petit-déjeuner?,ask_meal_choices,meal,breakfast
+60,Is there a charge for lunch?,Le déjeuner est-il payant?,ask_meal_cost,meal,lunch
+92,Can you tell me where the toilets are please?,Pouvez-vous me dire où sont les toilettes s'il vous plaît?,location-request,room,toilet

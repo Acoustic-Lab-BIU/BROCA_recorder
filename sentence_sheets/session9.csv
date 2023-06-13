@@ -1,0 +1,11 @@
+UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
+14,Who I should ask for help?,À qui dois-je demander de l'aide?,ask_help_gen,,
+21,We have an appointment.,On a rendez-vous.,inform_arrival,,
+20,We've come because we have an appointment actually. For a consultation.,On vient parce qu'on a rendez-vous en fait. Pour une consultation.,inform_arrival,,
+39,Will I finally get answers about my memory problems today?,Aurai-je enfin des réponses à mes problèmes de mémoire aujourd'hui ?,ask_about_diagnosis,,
+1,Hi,Salut,greet,,
+22,My husband is here to see Dr Gunson.,Mon mari vient voir le Dr. Gunson.,inform_arrival,PERSON/NAME,Dr Gunson
+6,I'm Christian pleased to meet you.,"Moi c'est Christian, ravi de vous rencontrer.",introduce_self,PERSON/NAME,Christian
+45,Where can we eat something?,Où est-ce qu'on peut manger quelque chose?,ask_meal_arrangements,,
+58,How much do meals here typically cost?,Quel est le prix habituel des repas ici?,ask_meal_cost,,
+52,What is today's menu?,Quel est le menu du jour ?,ask_meal_choices,,
