@@ -148,9 +148,10 @@ class RecorderWindow:
         # choose expected sound card
             device_index = device_dict['IN 01-02 (BEHRINGER UMC 1820)']
         except KeyError:
-            device_index = device_dict['default']
-        except KeyError:
-            device_index = 0
+            try:
+                device_index = device_dict['default']
+            except KeyError:
+                device_index = 0
             
         logging.debug(f'device index: {device_index}')
         r = recorder.Recorder(p, device_index)
