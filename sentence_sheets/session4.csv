@@ -1,11 +1,21 @@
 UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
-9,Yes you're right.,"Oui, tu as raison.",confirm,,
-91,I'm lost. I'm looking for the reception.,Je suis perdue. Je cherche l'accueil.,location-request,room,reception
-11,No this is my fifth time,"Non, c'est la cinquième fois que je viens.",deny,,
-32,"I'm wondering who dad will see first, do you know?","Je me demande qui papa va voir en premier, tu le sais ?",ask_appt_structure,whichappt,first
-94,Where should I go for the entrance?,Comment se rendre à l'entrée ?,directions-request,room,entrance
 53,Is food provided for my friend?,Mon amie aura-t-elle de la nourriture ?,ask_meal_companions,,
+65,Do you have vegetarian food?,Est-ce que vous avez la nourriture végétarienne?,ask_dietary,,
+66,Are kosher meals available?,Proposez-vous de la nourriture casher?,ask_dietary,,
+49,What is the patients' lunch?,Quel est le déjeuner des patients?,ask_meal_choices,meal,lunch
+5,My name is Oliver,Je m'appelle Oliver.,introduce_self,PERSON/NAME,Oliver
+34,Can my husband come in with me for the appointment?,Mon mari peut-il m'accompagner lors du rendez-vous?,ask_accompaniment,,
+73,What time is the cafeteria open until?,La cafétéria elle est ouverte jusqu'à quelle heure?,ask_opening_hours,place,cafe
+10,That's correct yeah,"Oui, c'est tout à fait ça.",confirm,,
+67,Do you have halal food options?,Avez-vous des plats halal?,ask_dietary,,
+2,Hello,Bonjour,greet,,
 77,What's a neuropsychologist?,Qu'est-ce qu'un neuropsychologue?,ask_profession_neuro,,
-29,Does the memory consultation last all day?,La consultation de mémoire dure toute la journée?,ask_appt_structure,,
-100,We want to leave how do we get to the exit?,"On veut sortir, pouvez-vous nous indiquer la sortie",directions-request,room,exit
-4,What name do I give you?,Comment dois-je vous appeler ?,ask_robot_name,,
+54,Does my husband get meals too?,Mon mari aura-t-il un repas aussi ? ,ask_meal_companions,,
+88,Where can I get a glass of water?,Où puis-je me procurer un verre d'eau?,location-request,room,water cooler
+81,Who else do I have to see today?,Qui d'autre dois-je voir aujourd'hui?,ask_whats_next,,
+52,What is today's menu?,Quel est le menu du jour ?,ask_meal_choices,,
+68,I'm vegan is that ok?,"Je suis végétalien, j'espère que cela ne pose pas de problème.",ask_dietary,,
+83,I've been waiting quite a while. When will my turn be?,J'attends depuis pas mal de temps. Quand sera mon tour ?,ask_wait_time,,
+46,What is the plan for meals?,Comment s'organisent les repas ? ,ask_meal_arrangements,,
+85,What time is my appointment?,À quelle heure est mon rendez-vous ?,ask_wait_time,,
+33,Can we bring someone to the memory consultation?,Est-ce qu'on peut venir accompagné à la consultation de mémoire?,ask_accompaniment,,

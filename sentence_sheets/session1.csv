@@ -1,11 +1,21 @@
 UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
-17,We have an appointment with the doctor but we don't remember what time.,On a rendez-vous avec le médecin mais on sait plus l'heure.,inform_arrival,professional,doctor
-63,When can I expect lunch?,A quelle heure puis-je déjeuner ?,ask_meal_times,meal,lunch
-61,What time do we eat breakfast?,À quelle heure prend-on le petit-déjeuner?,ask_meal_times,meal,breakfast
-87,"But I can't stay in front of you like this, where's the waiting room?","Mais là je peux pas rester sur la devant vous comme ça, où est la pièce pour attendre?",location-request,room,waiting room
-72,Can you lend me a walking frame for the visit?,Pouvez-vous me prêter un déambulateur pour la visite?,ask_mobility_aid,,
-28,"Oh, okay. But I'm not sure which documents I should have. Can you help me?","Oh, d'accord. Mais je ne suis pas sûr de quels documents je dois avoir. Pouvez-vous m'aider?",ask_documents,,
-56,Is the food on offer for both of us?,La nourriture proposée est-elle pour nous deux?,ask_meal_companions,,
-30,Could you give us an idea of what to expect today?,Pourriez-vous nous donner une idée de ce qui nous attend aujourd'hui?,ask_appt_structure,,
+60,Is there a charge for lunch?,Le déjeuner est-il payant?,ask_meal_cost,meal,lunch
+58,How much do meals here typically cost?,Quel est le prix habituel des repas ici?,ask_meal_cost,,
 86,Where's the cafe?,Où se trouve la cafétéria?,location-request,room,cafe
+44,I'm ready to leave please.,Je suis prête à partir s'il vous plaît.,ask_about_leaving,,
+91,I'm lost. I'm looking for the reception.,Je suis perdue. Je cherche l'accueil.,location-request,room,reception
+19,I have an appointment at ten fifteen.,J'ai rendez-vous à dix heures quinze.,inform_arrival,time,2023-05-23T10:15:00.000-07:00
+99,How do we get to the dining room?,Comment se rendre à la salle à manger ?,directions-request,room,dining room
 71,Are there walking sticks we could borrow?,Y-a-t-il des cannes que nous pouvons emprunter ?,ask_mobility_aid,,
+39,Will I finally get answers about my memory problems today?,Aurai-je enfin des réponses à mes problèmes de mémoire aujourd'hui ?,ask_about_diagnosis,,
+94,Where should I go for the entrance?,Comment se rendre à l'entrée ?,directions-request,room,entrance
+56,Is the food on offer for both of us?,La nourriture proposée est-elle pour nous deux?,ask_meal_companions,,
+69,I'm tired is there a wheelchair?,"Je suis fatigué, est-ce qu'il y a un fauteuil roulant ? ",ask_mobility_aid,,
+15,Can you direct me to someone who can help me?,Pouvez-vous me diriger vers quelqu'un qui peut m'aider?,ask_help_gen,,
+63,When can I expect lunch?,A quelle heure puis-je déjeuner ?,ask_meal_times,meal,lunch
+28,"Oh, okay. But I'm not sure which documents I should have. Can you help me?","Oh, d'accord. Mais je ne suis pas sûr de quels documents je dois avoir. Pouvez-vous m'aider?",ask_documents,,
+55,Do you offer meals for companions or just for the patients?,Proposez-vous des repas aux accompagnants ou seulement aux patients?,ask_meal_companions,,
+27,I'm not sure what documents you mean. Could you tell me please?,Je ne suis pas sûr de savoir de quels documents vous parlez. Pourriez-vous me les préciser?,ask_documents,,
+3,Can you tell me your name?,Pouvez-vous me dire votre nom?,ask_robot_name,,
+16,Where do I go for information?,Où dois-je aller pour obtenir des informations?,ask_help_gen,,
+1,Hi,Salut,greet,,

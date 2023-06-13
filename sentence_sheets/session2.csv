@@ -1,11 +1,21 @@
 UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
-41,I want to go home.,Je veux rentrer chez moi.,ask_about_leaving,reason,home
-89,I'd like a coffee.,J'ai envie d'un café.,location-request,room,coffee machine
-10,That's correct yeah,"Oui, c'est tout à fait ça.",confirm,,
-59,What do we have to pay for the meals?,Combien doit-on payer pour les repas?,ask_meal_cost,,
-2,Hello,Bonjour,greet,,
-50,Do you know what they serve for lunch?,Savez-vous ce qu'ils servent pour le déjeuner ?,ask_meal_choices,meal,lunch
+80,Can you tell me how many more appointments I have?,Pouvez-vous me dire combien de rendez-vous il me reste?,ask_whats_next,,
+43,I don't want to stay any longer.,Je ne veux pas rester plus longtemps.,ask_about_leaving,,
+14,Who I should ask for help?,À qui dois-je demander de l'aide?,ask_help_gen,,
+18,I've come for a memory consultation.,Moi je viens pour une consultation de mémoire.,inform_arrival,,
+90,Where can I find a nurse?,Où puis-je trouver une infirmière?,location-request,professional,nurse
+95,Yes and to get to the doctors' office?,Oui et pour aller au bureau des médecins?,directions-request,room,consulting room
+6,I'm Christian pleased to meet you.,"Moi c'est Christian, ravi de vous rencontrer.",introduce_self,PERSON/NAME,Christian
+62,When does lunch usually happen?,Quand le déjeuner a-t-il lieu en général?,ask_meal_times,meal,lunch
+97,Can you point me to the lifts please,"Pouvez-vous m'indiquer les ascenseurs, s'il vous plaît?",directions-request,room,lift
 31,I'm a little unsure about what's going to happen this visit. Could you explain?,Je ne suis pas sûr de ce qui va se passer lors de cette visite. Pourriez-vous expliquer?,ask_appt_structure,,
-57,Could you let me know the breakfast cost,Pourriez-vous m'indiquer le prix du petit-déjeuner?,ask_meal_cost,meal,breakfast
-19,I have an appointment at ten fifteen.,J'ai rendez-vous à dix heures quinze.,inform_arrival,time,2023-05-23T10:15:00.000-07:00
-73,What time is the cafeteria open until?,La cafétéria elle est ouverte jusqu'à quelle heure?,ask_opening_hours,place,cafe
+79,What happens now that I've seen the nurse?,Que se passe-t-il maintenant que j'ai vu l'infirmière?,ask_whats_next,professional,nurse
+36,Could I go in with my father to translate?,Puis-je aller à la consultation avec mon père pour traduire?,ask_accompaniment,reason,translate
+30,Could you give us an idea of what to expect today?,Pourriez-vous nous donner une idée de ce qui nous attend aujourd'hui?,ask_appt_structure,,
+12,No no it's not,"Non, ce n'est pas ça.",deny,,
+37,Do you think they'll diagnose me with something after this visit?,Pensez-vous que j'aurais mon diagnostic après cette visite ?,ask_about_diagnosis,,
+96,And can you tell me how to get the ground floor?,Et pouvez-vous me dire comment me rendre au rez-de-chaussée?,directions-request,room,ground floor
+45,Where can we eat something?,Où est-ce qu'on peut manger quelque chose?,ask_meal_arrangements,,
+21,We have an appointment.,On a rendez-vous.,inform_arrival,,
+100,We want to leave how do we get to the exit?,"On veut sortir, pouvez-vous nous indiquer la sortie",directions-request,room,exit
+42,Can I leave now?,Puis-je partir maintenant ?,ask_about_leaving,,

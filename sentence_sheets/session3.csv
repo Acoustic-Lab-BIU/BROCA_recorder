@@ -1,11 +1,21 @@
 UttNo,Utterance (EN),Final (FR),Intent,Entity name,Entity value
-79,What happens now that I've seen the nurse?,Que se passe-t-il maintenant que j'ai vu l'infirmière?,ask_whats_next,professional,nurse
-78,Who does my wife see next?,Qui ma femme verra-t-elle ensuite?,ask_whats_next,,
-80,Can you tell me how many more appointments I have?,Pouvez-vous me dire combien de rendez-vous il me reste?,ask_whats_next,,
-54,Does my husband get meals too?,Mon mari aura-t-il un repas aussi ? ,ask_meal_companions,,
+17,We have an appointment with the doctor but we don't remember what time.,On a rendez-vous avec le médecin mais on sait plus l'heure.,inform_arrival,professional,doctor
+40,Can they tell me what's wrong with me after today?,Pourront-ils me dire ce qui ne va pas chez moi en fin de journée ?,ask_about_diagnosis,,
+25,Can you remind me what documents I need to bring?,Vous pouvez me rappeler les documents à prévoir?,ask_documents,,
 93,I'd like to see a doctor.,Je voudrais voir un docteur.,location-request,professional,doctor
-26,What documents should I show?,Quels papiers dois-je montrer?,ask_documents,,
-42,Can I leave now?,Puis-je partir maintenant ?,ask_about_leaving,,
-67,Do you have halal food options?,Avez-vous des plats halal?,ask_dietary,,
 76,Does the hospital stay open all the time?,L'hôpital est-il ouvert en permanence?,ask_opening_hours,place,hospital
-8,hello I'm Nancie,"Bonjour, je m'appelle Nancie.",greet+introduce_self,PERSON/NAME,Nancie
+98,What direction do we go in for the stairs?,Où devons-nous aller pour prendre les escaliers ?,directions-request,room,stairs
+35,Is it possible for my daughter to stay with me?,Est-ce que ma fille peut rester avec moi?,ask_accompaniment,,
+51,What can I expect for breakfast?,À quoi puis-je m'attendre pour le petit-déjeuner?,ask_meal_choices,meal,breakfast
+7,Hi robot what's your name?,"Bonjour, comment t'appelles-tu ?",greet+ask_robot_name,,
+24,We're here for my wife's checkup.,Nous sommes ici pour le rendez-vous de ma femme.,inform_arrival,,
+41,I want to go home.,Je veux rentrer chez moi.,ask_about_leaving,reason,home
+9,Yes you're right.,"Oui, tu as raison.",confirm,,
+75,What are the clinic's opening hours?,Quels sont les horaires d'ouverture de l'hôpital de jour?,ask_opening_hours,place,reception
+50,Do you know what they serve for lunch?,Savez-vous ce qu'ils servent pour le déjeuner ?,ask_meal_choices,meal,lunch
+78,Who does my wife see next?,Qui ma femme verra-t-elle ensuite?,ask_whats_next,,
+84,We've been waiting for ages.  Any idea when I'll be seen?,Nous attendons depuis une éternité. Auriez-vous une idée de quand je passerai ?,ask_wait_time,,
+59,What do we have to pay for the meals?,Combien doit-on payer pour les repas?,ask_meal_cost,,
+32,"I'm wondering who dad will see first, do you know?","Je me demande qui papa va voir en premier, tu le sais ?",ask_appt_structure,whichappt,first
+11,No this is my fifth time,"Non, c'est la cinquième fois que je viens.",deny,,
+13,I'm not quite sure what I'm supposed to do here. Can you assist me?,Je ne sais pas exactement ce que je dois faire ici.  Pouvez-vous m'aider?,ask_help_gen,,
