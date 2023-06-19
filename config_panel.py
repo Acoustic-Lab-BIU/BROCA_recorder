@@ -101,7 +101,7 @@ class AudioRecorderApp:
     def show_new_window(self,saved_path,speaker_id):
         global new_window
         new_window = tk.Toplevel(self.window)
-        new_window.geometry("750x400")
+        new_window.geometry("1920x1080")
         new_window.title("Record Panel")
 
         self.submit_frame = tk.Frame(new_window)  # Create a frame to hold the label and button

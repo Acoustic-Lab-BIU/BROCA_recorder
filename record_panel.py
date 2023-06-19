@@ -50,8 +50,8 @@ class RecorderWindow:
 
             
 
-        self.text = tk.Text(self.window, height=2,
-                            width=75, font=("Arial", 18))
+        self.text = tk.Text(self.window, height=10,
+                            width=200, font=("Arial", 18))
         self.text.pack()
         self.text.insert(tk.END, self.sentences[self.current_sentence])
 
