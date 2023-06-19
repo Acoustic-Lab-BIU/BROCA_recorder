@@ -50,8 +50,8 @@ class RecorderWindow:
 
             
 
-        self.text = tk.Text(self.window, height=10,
-                            width=200, font=("Arial", 18))
+        self.text = tk.Text(self.window, height=4,
+                            width=100, font=("Arial", 100),wrap="word")
         self.text.pack()
         self.text.insert(tk.END, self.sentences[self.current_sentence])
 
@@ -81,7 +81,7 @@ class RecorderWindow:
         self.sen_num = tk.Label(self.timerFrame_sen,
                                 text="Sentence index " +
                                 str(self.current_sentence+1),
-                                font=("Arial", 16)
+                                font=("Arial", 8)
                                 )
         self.countdownBox = tk.Entry(self.timerFrame, bd=3)
         self.countdownBox.insert(0, 15)  # 15 sec defult recording
@@ -89,8 +89,8 @@ class RecorderWindow:
         self.rec_button = tk.Button(self.timerFrame,
                                     padx=5,
                                     pady=5,
-                                    text="Record",
-                                    font=("Arial", 20),
+                                    text="Ne parlez pas",
+                                    font=("Arial", 100),
                                     bg="red", activebackground='red',
                                     command=lambda: self.make_recording()
                                     )
@@ -118,7 +118,7 @@ class RecorderWindow:
             if ts == 0:
 
                 completeTimer = tk.Label(
-                    self.timerFrame, text="Time is complete")
+                    self.timerFrame, text="Le temps s'est écoulé")
                 completeTimer.pack()
 
     def countdown(self, t):
@@ -134,7 +134,7 @@ class RecorderWindow:
         self.completeTimer.config(text="")
         time.sleep(1)
 
-        rec_button_chanege.config(text="Recording...", bg="green")
+        rec_button_chanege.config(text="Parlez...", bg="green")
         rec_button_chanege.update()
         # self.start_timer()
 
@@ -165,8 +165,8 @@ class RecorderWindow:
                  f'sentence_{UttNo}_{now}.wav', None)
 
         self.rec_button.config(
-            text="Record", bg="red", activebackground='red', command=self.make_recording)
-        self.completeTimer.config(text="Time is complete")
+            text="Ne parlez pas", bg="red", activebackground='red', command=self.make_recording)
+        self.completeTimer.config(text="Le temps s'est écoulé")
         # completeTimer.pack()
         self.completeTimer.update()
 

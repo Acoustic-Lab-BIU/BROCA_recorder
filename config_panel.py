@@ -106,7 +106,7 @@ class AudioRecorderApp:
 
         self.submit_frame = tk.Frame(new_window)  # Create a frame to hold the label and button
         self.submit_frame.pack()
-        self.submit_label = tk.Label(self.submit_frame,font=("Arial", 17))
+        self.submit_label = tk.Label(self.submit_frame,font=("Arial", 10))
         self.submit_label.pack(side=tk.BOTTOM)
         self.submit_label.config(text="Set Speaker ID " + speaker_id+ "\n Saved in path: " + str(saved_path))
         return_button = tk.Button(new_window, text="Return", command=self.return_to_main)
@@ -126,7 +126,7 @@ class AudioRecorderApp:
         self.button_submit.pack(side=tk.LEFT)
         new_window.destroy()
         self.window.deiconify()
-        
+       # prep_session
     def save_speaker_info(self,path:Path,id_number):
         gender = self.selected_gender.get()
         if gender == 1:
